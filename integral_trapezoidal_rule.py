@@ -1,13 +1,10 @@
 from math import sin, cos
 
 PROBLEM = '2sin(x)+sin(3x)+2cos(x)+1'
-step_len = 0.5
-start = 0
-stop = 2
 print(f"\nPROBLEM:{PROBLEM}")
-print(f'starting point: {start}')
-print(f'end point: {stop}')
-print(f'length of step: {step_len}')
+start = float(input('start: '))
+stop = float(input('stop: '))
+step_len = float(input('step_length:'))
 
 # default: 6.664165097862194
 def f(x) -> float:
