@@ -5,9 +5,13 @@ from numpy import array
 first_number = 7
 second_number = 7
 print(array([first_number, second_number]))
+resultArray = [first_number, second_number]
 
 for i in range(9):
     myMatrix=array([second_number*1,first_number*1+second_number*1])
     first_number = myMatrix[0]
     second_number = myMatrix[1]
+    resultArray.append(second_number)
     print(myMatrix)
+
+print(resultArray)
