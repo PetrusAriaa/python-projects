@@ -2,7 +2,7 @@ from operator import indexOf
 
 import numpy as np
 
-out = open('data/no_aspd_gspd.csv', 'w')
+out = open('data/mission_terbang_auto_2.csv', 'w')
 
 def decompose (data):
     lines = data.readlines()
@@ -23,7 +23,7 @@ def decompose (data):
         res.append(_data)
     return res
 
-data = open('data/no_aspd_gspd.txt', 'r')
+data = open('data/mission_terbang_auto_2.txt', 'r')
 _decompose = decompose(data)
 
 #insert feature columns
